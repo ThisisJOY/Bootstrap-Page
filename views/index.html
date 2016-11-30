@@ -25,9 +25,138 @@
 </head>
 <body class="hidden">
   <div id="app">{{{ reactMarkup }}}</div>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <a class="navbar-brand" href="/">
+            <img class="pull-left mr-15 relative logo__graphic" src="https://www.transitions-now.com/wp-content/uploads/2015/08/TN_WEB_LOGO_173x49@2x.png" width="118" height="24">
+            <span class="pull-left gotham-rounded logo__text"></span>
+          </a>
+      </div>
+      <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <!-- Home -->
+              <li class="active"><a href="/">Home</a></li>
+              <!-- Network -->
+              <li class="dropdown">
+                <a href="/network" class="dropdown-toggle" data-toggle="dropdown">
+                  Network
+                  &nbsp;
+                  <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="/LAN-interface" style="padding: 8px 20px">LAN Interface</a></li>
+                  <li><a href="/WLAN-interface" style="padding: 8px 20px">WLAN Interface</a></li>
+                </ul>
+              </li>
+              <!-- CAN -->
+              <li class="dropdown">
+                <a href="/CAN" class="dropdown-toggle" data-toggle="dropdown">
+                  CAN
+                  &nbsp;
+                  <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="/CAN1" style="padding: 8px 20px">CAN1</a></li>
+                  <li><a href="/CAN2" style="padding: 8px 20px">CAN2</a></li>
+                </ul>
+              </li>
+              <!-- Power input voltages -->
+              <li><a href="/on-off">On/Off</a></li>
+              <!-- OS information -->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  OS Info
+                  &nbsp;
+                  <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="/kernel-info" style="padding: 8px 20px">Kernel info</a></li>
+                  <li><a href="/disk-usage" style="padding: 8px 20px">Disk uasge</a></li>
+                  <li><a href="/partitions" style="padding: 8px 20px">Partitions</a></li>
+                  <li><a href="/cpu-usages" style="padding: 8px 20px">CPU usage</a></li>
+                  <li><a href="/memory" style="padding: 8px 20px">Memory</a></li>
+                </ul>
+              </li>
+              <!-- Firmware information -->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  Firmware Info
+                  &nbsp;
+                  <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="/accelerometer" style="padding: 8px 20px">version</a></li>
+                  <li><a href="/configuration" style="padding: 8px 20px">Configuration</a></li>
+                </ul>
+              </li>
+              <!-- Sensors -->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  Sensor
+                  &nbsp;
+                  <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="/accelerometer" style="padding: 8px 20px">accelerometer</a></li>
+                  <li><a href="/gyroscope" style="padding: 8px 20px">gyroscope</a></li>
+                  <li><a href="/microctrl" style="padding: 8px 20px">mircoctrl</a></li>
+                  <li><a href="/pressure " style="padding: 8px 20px">pressure</a></li>
+                  <li><a href="/temperature-LPS25HB" style="padding: 8px 20px">temperature-LPS25HB</a></li>
+                  <li><a href="/temperature-LSM6DS3" style="padding: 8px 20px">temperature-LSM6DS3</a></li>
+                </ul>
+              </li>
+              <!-- GPS -->
+              <li><a href="/gps">GPS</a></li>
+              <!-- GPIO -->
+              <li><a href="/gpio">GPIO</a></li>
+              <!-- RS485 -->
+              <li><a href="/RS485">RS485</a></li>
+              <!-- OpenVPN Settings -->
+              <li><a href="/OpenVPN">OpenVPN Settings</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    More
+                    &nbsp;
+                    <i class="fa fa-caret-down"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/Website" style="padding: 8px 20px">About Us</a></li>
+                    <li><a href="/LinkedIn" style="padding: 8px 20px">LinkedIn</a></li>
+                    <li><a href="/Twitter" style="padding: 8px 20px">Twitter</a></li>
+                  </ul>
+                </li>
+<!--               <li class="dropdown navbar__user-dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="background: #fff;">
+                  <div class="pull-left">
+                    <div class="w-25 h-25 mr-15 relative" style="top: -3px; background-position: center; background-size: cover; background-image: url(https://www.gravatar.com/avatar/a760054c3a42621eb9e4f8e97998e0f5?d=https://cosmicjs.com/images/logo-3.jpg);"></div>
+                  </div>
+                  <div class="pull-left">
+                    <span class="greeting">Hello, Qiaoqiao&nbsp;&nbsp;&nbsp;</span>
+                    <i class="fa fa-cog w-15"></i>
+                  </div>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="/buckets"><i class="fa fa-database w-20"></i>&nbsp;&nbsp;Buckets</a></li>
+                  <li><a href="/account/settings"><i class="fa fa-user w-20"></i>&nbsp;&nbsp;Account</a></li>
+                  <li><a href="/pricing"><i class="fa fa-clipboard w-20"></i>&nbsp;&nbsp;Plans</a></li>
+                  <li><a href="/docs"><i class="fa fa-files-o w-20"></i>&nbsp;&nbsp;Documentation</a></li>
+                  <li><a href="/signout"><i class="fa fa-power-off w-20"></i>&nbsp;&nbsp;Log out</a></li>
+                </ul>
+              </li>
+ -->            </ul>
+      </div><!--/.navbar-collapse -->
+    </div><!-- // .container-fluid -->
+  </nav>
   <script src="/js/jquery.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
-  <script src="/js/clean-blog.min.js"></script>
   <script src="/dist/bundle.js"></script>
 </body>
 </html>

@@ -14,18 +14,18 @@ class App extends Component {
   }
   render(){
     return (
-      <div>
-        <h1>Welcome to In Vehicle Hub 2</h1>
-           <nav>
-              <ul>
-                 <li><Link to="/">Home</Link></li>
-                 <li><Link to="/about">About</Link></li>
-                 <li><Link to="/explore">Explore IVH2</Link></li>
-                 <li><Link to="/contact">Contact</Link></li>
-              </ul>
-           </nav>
-        { this.props.children }
-      </div>
+       <div>
+         <h1>Welcome to In Vehicle Hub 2</h1>
+            <nav>
+               <ul>
+                  <li><Link to="/">Home</Link></li>
+                  <li><Link to="/about">About</Link></li>
+                  <li><Link to="/explore">Explore IVH2</Link></li>
+                  <li><Link to="/contact">Contact</Link></li>
+               </ul>
+            </nav>
+         { this.props.children }
+       </div>
     )
   }
 }
